@@ -1,0 +1,30 @@
+# Build artifacts
+dist/
+.vite/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Editor
+.vscode/
+.idea/
+
+# Local env
+.env
+.env.local
+
+# Test outputs
+test-output/
+playwright-report/
+
+# Personal IDE settings
+*.local.json

@@ -1,0 +1,23 @@
+# wrangler.toml — Cloudflare Pages config for Silk Road Medinfo v2
+# Reference: https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+
+name = "silkroad-medinfo"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# Limits (free tier: 100K req/day; Pages Functions: 100K req/day)
+# Override KV/D1/R2 bindings here when needed:
+# [[kv_namespaces]]
+# binding = "CONSULTATIONS"
+# id = "your-kv-namespace-id"
+
+[vars]
+SITE_URL = "https://silkroad-medinfo.com"
+ADMIN_EMAIL = "contact@silkroad-medinfo.com"
+
+# Secrets (set via: wrangler pages secret put TELEGRAM_BOT_TOKEN)
+# TELEGRAM_BOT_TOKEN   — Telegram bot token from @BotFather
+# TELEGRAM_CHAT_ID     — chat to receive notifications
+# WECOM_WEBHOOK        — enterprise WeChat webhook URL
+# RESEND_API_KEY       — Resend email API key
+# TURNSTILE_SECRET     — Cloudflare Turnstile secret (optional)

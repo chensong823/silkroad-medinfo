@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="bg-warm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBF7F0"/>
+      <stop offset="100%" stop-color="#D4B585"/>
+    </linearGradient>
+    <linearGradient id="bg-cool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4F7FB"/>
+      <stop offset="100%" stop-color="#E8EDF2"/>
+    </linearGradient>
+    <linearGradient id="bg-navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="100%" stop-color="#061A2E"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(15,23,42,0.18)"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg-warm)"/>  <rect width="1920" height="1080" fill="url(#vignette)"/>  <rect x="0" y="780" width="1920" height="300" fill="#8B5A3C" opacity="0.85"/>  <g>
+    <rect x="780" y="700" width="500" height="220" fill="#F4F7FB" stroke="#334155" stroke-width="1" rx="4" transform="rotate(-4 1030 810)"/>
+    <line x1="820" y1="730" x2="1240" y2="730" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+    <line x1="820" y1="760" x2="1240" y2="760" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+    <line x1="820" y1="790" x2="1180" y2="790" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+    <line x1="820" y1="820" x2="1220" y2="820" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+  </g>  <g>
+    <path d="M 1480 720 L 1500 880 L 1600 880 L 1620 720 Z" fill="#FBF7F0" stroke="#334155" stroke-width="1"/>
+    <ellipse cx="1550" cy="720" rx="60" ry="12" fill="#D4B585"/>
+  </g>  <g>
+    <ellipse cx="380" cy="860" rx="80" ry="20" fill="#8B5A3C"/>
+    <path d="M 380 860 Q 340 800 360 760 Q 380 740 400 760 Q 420 800 380 860 Z" fill="#D4B585"/>
+    <path d="M 380 860 Q 350 820 370 780" fill="none" stroke="#8B5A3C" stroke-width="1"/>
+  </g>  <g opacity="0.7">
+    <rect x="160" y="180" width="180" height="240" fill="#C8954A" stroke="#8B5A3C" stroke-width="2"/>
+      <g transform="translate(250,300) scale(0.5)" fill="#8B5A3C" opacity="0.85">
+    <polygon points="0,-40 12,-12 40,0 12,12 0,40 -12,12 -40,0 -12,-12"/>
+    <polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#C8954A"/>
+    <circle cx="0" cy="0" r="6" fill="#E63946"/>
+  </g>
+
+  </g>  <g>
+    <circle cx="1300" cy="380" r="30.6" fill="#C8954A"/>
+    <path d="M 1242.4 416.6
+             Q 1232.4 481.40000000000003 1219.36 542.6
+             L 1219.36 740
+             L 1380.64 740
+             L 1380.64 542.6
+             Q 1367.6 481.40000000000003 1357.6 416.6
+             Z"
+          fill="#C8954A"/>
+    <path d="M 1279.264 434.6
+             L 1320.736 434.6
+             L 1311.52 488.6
+             L 1288.48 488.6 Z"
+          fill="#8B5A3C"/>
+  </g>
+  <g opacity="0.55" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#334155">
+    <text x="48" y="1010" font-weight="600">Silk Road Medinfo · placeholder</text>
+    <text x="48" y="1040" font-size="18" fill="#334155" opacity="0.75">CTA Banner · variant A</text>
+  </g>
+</svg>

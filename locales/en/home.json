@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "eyebrow": "Meinian Health · Xinjiang flagship",
+    "headline": "A medical doorway, opened gently across Xinjiang.",
+    "subheadline": "Capsule endoscopy, cardiac MR angiography, low-dose imaging, and care navigation for cross-border families, in one calm place.",
+    "primary_cta": "View flagship procedures",
+    "secondary_cta": "Cross-border program"
+  },
+  "section_meinian": {
+    "title": "Meinian Health · Xinjiang flagship",
+    "lead": "Two procedures lead the year for our Xinjiang flagship team: a capsule endoscopy line and a cardiac MR angiography program."
+  },
+  "section_science": {
+    "title": "Understand it first. Then decide.",
+    "lead": "The Patient Library explains how each test works, what happens during it, and what to prepare, so you can ask your physician the right questions.",
+    "cta": "Open the library"
+  },
+  "section_cross_border": {
+    "title": "From Central Asia to Xinjiang, the trip can be light.",
+    "lead": "From invitation letters and visa support to translators and follow-up calls, our Xinjiang team walks beside you in Chinese, Russian, and Uzbek.",
+    "cta": "Cross-border program"
+  },
+  "final_cta": {
+    "title": "Share a few details. A care coordinator will reach you within one business day.",
+    "body": "Consultations are complimentary. Procedure fees follow the clinic's published schedule.",
+    "button": "Book a consultation"
+  }
+}

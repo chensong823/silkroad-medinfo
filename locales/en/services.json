@@ -1,0 +1,31 @@
+{
+  "page_title": "Services",
+  "page_lead": "Two flagship precision-screening procedures lead this year for the Meinian Health Xinjiang team. More services are on the way.",
+  "section_flagship": {
+    "title": "Meinian Health · Xinjiang flagship",
+    "lead": "Two flagship precision-screening procedures for this year: capsule endoscopy and cardiac MR angiography."
+  },
+  "capsule": {
+    "title": "Capsule endoscopy",
+    "subtitle": "Anhan AI · magnetically guided",
+    "highlights": [
+      "No tube, no sedation",
+      "AI-assisted reading",
+      "Single-use capsule"
+    ]
+  },
+  "cardiac": {
+    "title": "Cardiac MR angiography",
+    "subtitle": "United Imaging uMR880 · 3.0T",
+    "highlights": [
+      "No ionizing radiation",
+      "No contrast agent",
+      "14-second breath hold"
+    ]
+  },
+  "service_more": {
+    "title": "More services coming online",
+    "lead": "Low-dose CT, combined tumor markers, child growth and development, dental and oral care, and other programs are in preparation.",
+    "cta": "Tell us what you need and we will notify you as soon as it opens"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "MedicalOrganization": {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "@id": "https://silkroad-medinfo.com/#organization",
+    "name": "丝路医讯 Silk Road Medinfo",
+    "alternateName": ["Silk Road Medinfo", "Шёлковый путь · МедИнфо"],
+    "url": "https://silkroad-medinfo.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://silkroad-medinfo.com/shared/img/logo.svg",
+      "width": 240,
+      "height": 240
+    },
+    "description": "美年健康新疆公司运营的医疗信息门户，为中亚五国与中国新疆地区患者提供可读、可信、可预约的医疗内容。",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "美年健康 (Meinian Health)",
+      "url": "https://www.meinian.com/"
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "China" },
+      { "@type": "AdministrativeArea", "name": "Xinjiang" },
+      { "@type": "Country", "name": "Kazakhstan" },
+      { "@type": "City", "name": "Almaty" },
+      { "@type": "Country", "name": "Uzbekistan" },
+      { "@type": "City", "name": "Tashkent" },
+      { "@type": "Country", "name": "Kyrgyzstan" },
+      { "@type": "City", "name": "Bishkek" },
+      { "@type": "Country", "name": "Tajikistan" },
+      { "@type": "Country", "name": "Turkmenistan" }
+    ],
+    "availableLanguage": [
+      { "@type": "Language", "name": "Chinese", "alternateName": "zh-CN" },
+      { "@type": "Language", "name": "English", "alternateName": "en" },
+      { "@type": "Language", "name": "Russian", "alternateName": "ru" }
+    ],
+    "medicalSpecialty": [
+      "Gastroenterology",
+      "Cardiology",
+      "Radiology"
+    ]
+  },
+  "WebSite": {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://silkroad-medinfo.com/#website",
+    "url": "https://silkroad-medinfo.com/",
+    "name": "丝路医讯 Silk Road Medinfo",
+    "inLanguage": ["zh-CN", "en", "ru"],
+    "publisher": { "@id": "https://silkroad-medinfo.com/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://silkroad-medinfo.com/search?q={search_term}",
+      "query-input": "required name=search_term"
+    }
+  },
+  "BreadcrumbListHome": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://silkroad-medinfo.com/" }
+    ]
+  },
+  "BreadcrumbListCapsule": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://silkroad-medinfo.com/" },
+      { "@type": "ListItem", "position": 2, "name": "服务项目", "item": "https://silkroad-medinfo.com/services/" },
+      { "@type": "ListItem", "position": 3, "name": "胶囊胃镜", "item": "https://silkroad-medinfo.com/projects/capsule-endoscopy.html" }
+    ]
+  },
+  "BreadcrumbListCardiac": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://silkroad-medinfo.com/" },
+      { "@type": "ListItem", "position": 2, "name": "服务项目", "item": "https://silkroad-medinfo.com/services/" },
+      { "@type": "ListItem", "position": 3, "name": "心脏冠脉核磁", "item": "https://silkroad-medinfo.com/projects/cardiac-mrca.html" }
+    ]
+  },
+  "BreadcrumbListServices": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://silkroad-medinfo.com/" },
+      { "@type": "ListItem", "position": 2, "name": "服务项目", "item": "https://silkroad-medinfo.com/services/" }
+    ]
+  },
+  "BreadcrumbListScience": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://silkroad-medinfo.com/" },
+      { "@type": "ListItem", "position": 2, "name": "医疗科普", "item": "https://silkroad-medinfo.com/science/" }
+    ]
+  },
+  "BreadcrumbListCentralAsia": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://silkroad-medinfo.com/" },
+      { "@type": "ListItem", "position": 2, "name": "新疆中亚特色医疗", "item": "https://silkroad-medinfo.com/central-asia/" }
+    ]
+  },
+  "MedicalProcedure_Capsule": {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "胶囊胃镜 (Capsule Endoscopy)",
+    "alternateName": "Anhan AI magnetically guided capsule endoscopy",
+    "description": "吞服 AI 磁控胶囊完成的消化道早筛检查。",
+    "procedureType": "Diagnostic",
+    "howPerformed": "受检者吞服一次性胶囊，胶囊随胃肠道蠕动完成全程拍摄。",
+    "followup": "3 至 5 个工作日出报告。",
+    "preparation": "检查前一日进流食或半流食，禁食 8 至 10 小时。"
+  },
+  "MedicalProcedure_CardiacMRCA": {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "心脏冠脉核磁 (Cardiac MR Angiography)",
+    "alternateName": "Cardiac MRCA",
+    "description": "通过 3.0T 磁共振对冠状动脉成像，无需注射含碘造影剂。",
+    "procedureType": "Diagnostic",
+    "howPerformed": "受检者在磁共振腔内完成多角度扫描，每次屏气 14 秒。",
+    "followup": "2 至 3 个工作日出报告。"
+  },
+  "FAQPage": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "胶囊胃镜检查前需要空腹吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "需要。检查前一日进流食或半流食，禁食 8 至 10 小时。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "心脏冠脉核磁有没有辐射？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "没有。磁共振成像使用磁场而非 X 射线，无电离辐射。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "检查报告多久能拿到？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "胶囊胃镜 3 至 5 个工作日，心脏冠脉核磁 2 至 3 个工作日。"
+        }
+      }
+    ]
+  },
+  "Organization_Social": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://silkroad-medinfo.com/#org-social",
+    "name": "丝路医讯",
+    "url": "https://silkroad-medinfo.com/",
+    "sameAs": []
+  }
+}

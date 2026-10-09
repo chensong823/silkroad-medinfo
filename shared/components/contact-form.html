@@ -1,0 +1,87 @@
+<!-- shared/components/contact-form.html
+     Reusable contact form block. Embed with:
+       <div data-include="contact-form" data-endpoint="/api/contact"></div>
+     The runtime will clone this template's contents into the placeholder.
+-->
+<template id="contact-form-template">
+  <form class="form" data-contact-form novalidate aria-labelledby="contact-form-title">
+    <header class="mb-4">
+      <h2 class="h2" id="contact-form-title" data-i18n="contact.form_title">提交咨询</h2>
+      <p class="lead mt-4" data-i18n="contact.form_lead">填写下列信息，医务顾问将在一个工作日内回复你。所有信息仅用于本次咨询。</p>
+    </header>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label class="form-label" for="cf-name" data-i18n="contact.fields.name_label">姓名</label>
+        <input class="form-input" type="text" id="cf-name" name="name" required
+               minlength="2" maxlength="80"
+               data-i18n-placeholder="contact.fields.name_placeholder"
+               placeholder="请输入您的姓名"
+               autocomplete="name"
+               aria-required="true" />
+        <span class="form-error" data-msg="required" data-i18n="contact.validation.required">此项为必填</span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="cf-email" data-i18n="contact.fields.email_label">邮箱</label>
+        <input class="form-input" type="email" id="cf-email" name="email" required
+               data-i18n-placeholder="contact.fields.email_placeholder"
+               placeholder="name@example.com"
+               autocomplete="email"
+               aria-required="true" />
+        <span class="form-error" data-msg="email" data-i18n="contact.validation.email">邮箱格式不正确</span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label class="form-label" for="cf-phone" data-i18n="contact.fields.phone_label">电话（含国家区号）</label>
+        <input class="form-input" type="tel" id="cf-phone" name="phone" required
+               pattern="\+?[\d\s\-()]{8,}"
+               data-i18n-placeholder="contact.fields.phone_placeholder"
+               placeholder="+86 138 0000 0000"
+               autocomplete="tel"
+               aria-required="true" />
+        <span class="form-error" data-msg="phone" data-i18n="contact.validation.phone">请填写带国家区号的电话号码</span>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="cf-topic" data-i18n="contact.fields.topic_label">咨询类型</label>
+        <select class="form-select" id="cf-topic" name="topic" required aria-required="true">
+          <option value="" data-i18n="contact.fields.topic_placeholder">请选择</option>
+          <option value="capsule" data-i18n="contact.fields.topic_options.capsule">胶囊胃镜咨询</option>
+          <option value="cardiac" data-i18n="contact.fields.topic_options.cardiac">心脏冠脉核磁咨询</option>
+          <option value="cross_border" data-i18n="contact.fields.topic_options.cross_border">跨境就医咨询</option>
+          <option value="uigur" data-i18n="contact.fields.topic_options.uigur">维吾尔医门诊咨询</option>
+          <option value="kazakh" data-i18n="contact.fields.topic_options.kazakh">哈萨克医门诊咨询</option>
+          <option value="other" data-i18n="contact.fields.topic_options.other">其他咨询</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label class="form-label" for="cf-message" data-i18n="contact.fields.message_label">留言</label>
+      <textarea class="form-textarea" id="cf-message" name="message"
+                maxlength="2000"
+                data-i18n-placeholder="contact.fields.message_placeholder"
+                placeholder="请简述你的情况或希望咨询的问题"></textarea>
+    </div>
+
+    <div class="form-consent form-consent-row">
+      <input type="checkbox" id="cf-consent" name="consent" required aria-required="true" />
+      <label for="cf-consent" data-i18n="contact.fields.consent_label">我已阅读并同意《隐私声明》，授权团队就本次咨询联系我。</label>
+      <span class="form-error" data-msg="consent" data-i18n="contact.validation.consent">请先同意隐私声明</span>
+    </div>
+
+    <!-- Honeypot for bots -->
+    <div style="position:absolute;left:-9999px" aria-hidden="true">
+      <label for="cf-website">website</label>
+      <input type="text" id="cf-website" name="website" autocomplete="off" tabindex="-1" />
+    </div>
+
+    <div class="form-submit-row">
+      <button type="submit" class="btn btn-primary" data-i18n="contact.submit.label">提交咨询</button>
+      <span class="form-status" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+</template>

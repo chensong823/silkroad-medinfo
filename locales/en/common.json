@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name_zh": "丝路医讯",
+    "name_en": "Silk Road Medinfo",
+    "name_ru": "Шёлковый путь · МедИнфо",
+    "tagline_zh": "A medical doorway across Xinjiang"
+  },
+  "nav": {
+    "home": "Home",
+    "science": "Patient Library",
+    "services": "Services",
+    "central_asia": "Xinjiang & Central Asia"
+  },
+  "language": {
+    "label": "Language",
+    "zh": "中文",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "skip": {
+    "to_content": "Skip to main content"
+  },
+  "footer": {
+    "about_title": "About Silk Road Medinfo",
+    "about_body": "Operated by Meinian Health Xinjiang. Plain-language medical information and care navigation for families in Central Asia and Xinjiang.",
+    "contact_title": "Get in touch",
+    "contact_intro": "Share your details and a care coordinator will reply within one business day.",
+    "contact_cta": "Send a request",
+    "legal_title": "Legal and compliance",
+    "legal_privacy": "Privacy notice",
+    "legal_terms": "Terms of use",
+    "legal_disclaimer": "Content on this site is for general education and care navigation. It is not a diagnosis or treatment plan. Final decisions belong to your physician.",
+    "copyright": "© Meinian Health Xinjiang"
+  },
+  "meta": {
+    "site_title": "Silk Road Medinfo · A medical doorway across Xinjiang",
+    "site_description": "Medical information portal operated by Meinian Health Xinjiang, offering clear, trustworthy, and bookable content for patients in Central Asia and Xinjiang.",
+    "og_locale": "en_US"
+  }
+}

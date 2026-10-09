@@ -1,0 +1,182 @@
+/* ============================================================
+   shared/css/tokens.css · Silk Road Medinfo v2
+   Single source of truth for design tokens
+   ============================================================ */
+
+:root {
+  /* ---- Brand: Tech mode (default) ---- */
+  --tech-primary: #0B5FAE;
+  --tech-primary-hover: #084A87;
+  --tech-primary-pressed: #063766;
+  --tech-accent: #E63946;
+  --tech-accent-soft: rgba(230, 57, 70, 0.12);
+  --tech-bg: #F4F7FB;
+  --tech-surface: #FFFFFF;
+  --tech-surface-2: #E8EDF2;
+
+  /* ---- Brand: Humanity mode (toggleable) ---- */
+  --human-primary: #C8954A;
+  --human-primary-hover: #A77835;
+  --human-primary-pressed: #835E22;
+  --human-accent: #8B5A3C;
+  --human-bg: #FBF7F0;
+  --human-surface: #FFFFFF;
+  --human-surface-2: #F0E8D8;
+
+  /* ---- Active brand vars (default = tech) ---- */
+  --brand-primary: var(--tech-primary);
+  --brand-primary-hover: var(--tech-primary-hover);
+  --brand-primary-pressed: var(--tech-primary-pressed);
+  --brand-accent: var(--tech-accent);
+  --brand-accent-soft: var(--tech-accent-soft);
+  --brand-bg: var(--tech-bg);
+  --brand-surface: var(--tech-surface);
+  --brand-surface-2: var(--tech-surface-2);
+
+  /* ---- Neutral scale ---- */
+  --neutral-900: #0F172A;
+  --neutral-800: #1E293B;
+  --neutral-700: #334155;
+  --neutral-600: #475569;
+  --neutral-500: #64748B;
+  --neutral-400: #94A3B8;
+  --neutral-300: #CBD5E1;
+  --neutral-200: #E2E8F0;
+  --neutral-100: #F1F5F9;
+  --neutral-50:  #F8FAFC;
+
+  /* ---- Semantic ---- */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #DC2626;
+  --info: #3B82F6;
+
+  /* ---- Typography ---- */
+  --font-zh: "PingFang SC", "Noto Sans SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-en: "Inter", "Söhne", "Helvetica Neue", system-ui, sans-serif;
+  --font-ru: "Inter", "Noto Sans", "PT Sans", system-ui, sans-serif;
+  --font-sans: var(--font-zh);
+  --font-display: var(--font-zh);
+
+  /* ---- Type scale (modular) ---- */
+  --fs-display: clamp(2.5rem, 5vw + 1rem, 4rem);   /* 40-64 */
+  --fs-h1:      clamp(2rem, 3.5vw + 1rem, 3rem);   /* 32-48 */
+  --fs-h2:      clamp(1.625rem, 2vw + 1rem, 2.25rem); /* 26-36 */
+  --fs-h3:      1.5rem;    /* 24 */
+  --fs-body-lg: 1.125rem;  /* 18 */
+  --fs-body:    1rem;      /* 16 */
+  --fs-small:   0.875rem;  /* 14 */
+  --fs-caption: 0.75rem;   /* 12 */
+
+  /* ---- Line heights ---- */
+  --lh-tight: 1.15;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.65;
+  --lh-loose: 1.8;
+
+  /* ---- Font weights ---- */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---- Spacing (8px grid) ---- */
+  --sp-0:  0;
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-8:  32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
+  --sp-32: 128px;
+
+  /* ---- Radii ---- */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-2xl: 24px;
+  --r-full: 9999px;
+
+  /* ---- Shadows (offset+soft blur, not decoration) ---- */
+  --shadow-sm:  0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md:  0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg:  0 12px 32px rgba(15, 23, 42, 0.12);
+  --shadow-xl:  0 24px 64px rgba(15, 23, 42, 0.16);
+  --shadow-focus: 0 0 0 3px rgba(11, 95, 174, 0.35);
+
+  /* ---- Layout ---- */
+  --container-sm: 100%;
+  --container-md: 100%;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-2xl: 1320px;
+  --container-padding: 16px;
+
+  /* ---- Z-index ---- */
+  --z-base: 1;
+  --z-sticky: 50;
+  --z-overlay: 80;
+  --z-modal: 100;
+  --z-toast: 120;
+
+  /* ---- Motion ---- */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-base: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in-sharp: cubic-bezier(0.4, 0, 1, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+  --dur-cinema: 600ms;
+}
+
+/* ---- Brand mode: humanity ---- */
+[data-theme="human"] {
+  --brand-primary: var(--human-primary);
+  --brand-primary-hover: var(--human-primary-hover);
+  --brand-primary-pressed: var(--human-primary-pressed);
+  --brand-accent: var(--human-accent);
+  --brand-bg: var(--human-bg);
+  --brand-surface: var(--human-surface);
+  --brand-surface-2: var(--human-surface-2);
+}
+
+/* ---- Locale-specific font ---- */
+[lang="en"] {
+  --font-sans: var(--font-en);
+  --font-display: var(--font-en);
+}
+[lang="ru"] {
+  --font-sans: var(--font-ru);
+  --font-display: var(--font-ru);
+  /* Russian: compensate line width with slightly larger body and looser line-height */
+  --fs-body: 1.0625rem;   /* 17px */
+  --lh-relaxed: 1.7;
+}
+
+/* ---- Container helper ---- */
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  max-width: var(--container-sm);
+}
+@media (min-width: 768px) {
+  .container { max-width: var(--container-md); padding-inline: 24px; }
+}
+@media (min-width: 1024px) {
+  .container { max-width: var(--container-lg); padding-inline: 32px; }
+}
+@media (min-width: 1280px) {
+  .container { max-width: var(--container-xl); padding-inline: 32px; }
+}
+@media (min-width: 1536px) {
+  .container { max-width: var(--container-2xl); padding-inline: 48px; }
+}

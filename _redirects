@@ -1,0 +1,8 @@
+# _redirects — Netlify redirects
+
+# Friendly rewrites for locale roots
+/en    /en/index.html   200
+/ru     /ru/index.html   200
+
+# 404 fallback
+/*      /404.html        404

@@ -1,0 +1,40 @@
+{
+  "brand": {
+    "name_zh": "丝路医讯",
+    "name_en": "Silk Road Medinfo",
+    "name_ru": "Шёлковый путь · МедИнфо",
+    "tagline_zh": "天山南北的医疗之门"
+  },
+  "nav": {
+    "home": "首页",
+    "science": "医疗科普",
+    "services": "服务项目",
+    "central_asia": "新疆中亚特色医疗"
+  },
+  "language": {
+    "label": "语言",
+    "zh": "中文",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "skip": {
+    "to_content": "跳到主要内容"
+  },
+  "footer": {
+    "about_title": "关于丝路医讯",
+    "about_body": "由美年健康新疆公司运营，为中亚与中国新疆地区的患者与家庭提供可读、可信、可预约的医疗信息。",
+    "contact_title": "联系咨询",
+    "contact_intro": "留下您的联系方式，医务顾问将在一个工作日内回复。",
+    "contact_cta": "提交咨询",
+    "legal_title": "法律与合规",
+    "legal_privacy": "隐私声明",
+    "legal_terms": "使用条款",
+    "legal_disclaimer": "本网站内容仅供科普与就医参考，不作为任何医学诊断或治疗依据。具体方案请以医师面诊为准。",
+    "copyright": "© 美年健康新疆公司"
+  },
+  "meta": {
+    "site_title": "丝路医讯 · 天山南北的医疗之门",
+    "site_description": "美年健康新疆公司运营的医疗信息门户，为中亚五国与中国新疆地区患者提供可读、可信、可预约的医疗内容。",
+    "og_locale": "zh_CN"
+  }
+}

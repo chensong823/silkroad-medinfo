@@ -1,0 +1,43 @@
+{
+  "form_title": "Send a request",
+  "form_lead": "Fill in the fields below. A care coordinator will reply within one business day. Your details are used only for this request.",
+  "fields": {
+    "name_label": "Full name",
+    "name_placeholder": "Your full name",
+    "email_label": "Email",
+    "email_placeholder": "name@example.com",
+    "phone_label": "Phone (with country code)",
+    "phone_placeholder": "+86 138 0000 0000",
+    "topic_label": "Topic",
+    "topic_placeholder": "Please select",
+    "topic_options": {
+      "capsule": "Capsule endoscopy question",
+      "cardiac": "Cardiac MR angiography question",
+      "cross_border": "Cross-border care question",
+      "uigur": "Uyghur medicine clinic question",
+      "kazakh": "Kazakh medicine clinic question",
+      "other": "Something else"
+    },
+    "message_label": "Message",
+    "message_placeholder": "Briefly describe your situation or question",
+    "consent_label": "I have read and agree to the Privacy notice, and consent to be contacted about this request."
+  },
+  "submit": {
+    "label": "Send request",
+    "loading": "Sending"
+  },
+  "success": {
+    "title": "Your request is in",
+    "body": "A care coordinator will contact you by phone or email within one business day."
+  },
+  "error": {
+    "title": "We could not send the request",
+    "body": "Please review the fields and try again, or call the clinic hotline directly."
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please include the country code",
+    "consent": "Please agree to the privacy notice first"
+  }
+}

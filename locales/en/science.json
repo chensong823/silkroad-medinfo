@@ -1,0 +1,35 @@
+{
+  "page_title": "Patient Library",
+  "page_lead": "Plain-language explanations of how each test works, what to expect, and what to prepare. Each article lists its sources and last update date.",
+  "section_how": {
+    "title": "How the test works",
+    "lead": "From physics to bedside, so you know what to expect before you lie down."
+  },
+  "articles": {
+    "capsule": {
+      "title": "Capsule endoscopy: what happens when you swallow a small capsule",
+      "summary": "How magnetic positioning works, how AI helps the reader, and what to prepare the night before."
+    },
+    "cardiac": {
+      "title": "Cardiac MR angiography: why no contrast is needed",
+      "summary": "Magnetic imaging versus X-ray imaging, and why the breath-hold rhythm matters."
+    },
+    "ct": {
+      "title": "Low-dose CT: seeing lung nodules clearly on a screening report",
+      "summary": "How low-dose CT differs from a standard CT, and what usually happens after a nodule is found."
+    }
+  },
+  "article_count": {
+    "_one": "{count} article in the library",
+    "_other": "{count} articles in the library"
+  },
+  "section_before": {
+    "title": "Before the test · what to prepare",
+    "lead": "Whether you can eat breakfast, drink water, or pause any medication."
+  },
+  "section_after": {
+    "title": "After the test · the report",
+    "lead": "Reports come back within 2 to 5 business days. A physician walks through them with you."
+  },
+  "cta_continue": "Read the article"
+}

@@ -1,0 +1,43 @@
+{
+  "form_title": "提交咨询",
+  "form_lead": "填写下列信息，医务顾问将在一个工作日内回复你。所有信息仅用于本次咨询，不做其他用途。",
+  "fields": {
+    "name_label": "姓名",
+    "name_placeholder": "请输入你的姓名",
+    "email_label": "邮箱",
+    "email_placeholder": "name@example.com",
+    "phone_label": "电话（含国家区号）",
+    "phone_placeholder": "+86 138 0000 0000",
+    "topic_label": "咨询类型",
+    "topic_placeholder": "请选择",
+    "topic_options": {
+      "capsule": "胶囊胃镜咨询",
+      "cardiac": "心脏冠脉核磁咨询",
+      "cross_border": "跨境就医咨询",
+      "uigur": "维吾尔医门诊咨询",
+      "kazakh": "哈萨克医门诊咨询",
+      "other": "其他咨询"
+    },
+    "message_label": "留言",
+    "message_placeholder": "请简述你的情况或希望咨询的问题",
+    "consent_label": "我已阅读并同意《隐私声明》，授权团队就本次咨询联系我。"
+  },
+  "submit": {
+    "label": "提交咨询",
+    "loading": "正在提交"
+  },
+  "success": {
+    "title": "已收到你的咨询",
+    "body": "医务顾问将在一个工作日内通过电话或邮件回复你。"
+  },
+  "error": {
+    "title": "提交未完成",
+    "body": "请检查表单字段后重试，或直接拨打客服热线。"
+  },
+  "validation": {
+    "required": "此项为必填",
+    "email": "邮箱格式不正确",
+    "phone": "请填写带国家区号的电话号码",
+    "consent": "请先同意隐私声明"
+  }
+}

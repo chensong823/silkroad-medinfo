@@ -1,0 +1,38 @@
+# Silk Road Medinfo · robots.txt
+# Allow all crawlers, reference sitemap
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /404.html
+Disallow: /500.html
+
+# Search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# AI crawlers (allow, but reference attribution)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap
+Sitemap: https://silkroad-medinfo.com/shared/seo/sitemap.xml
+Sitemap: https://silkroad-medinfo.com/sitemap.xml
+
+# Host
+Host: https://silkroad-medinfo.com

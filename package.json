@@ -1,0 +1,28 @@
+{
+  "name": "silkroad-medinfo",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Silk Road Medinfo — medical information portal for Xinjiang and Central Asia",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/postbuild.js",
+    "build:vite": "vite build",
+    "postbuild": "node scripts/postbuild.js",
+    "preview": "vite preview --host",
+    "validate": "python scripts/validate-html.py && python scripts/i18n-parity.py --locales locales",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=dist",
+    "deploy:cloudflare": "wrangler pages deploy dist",
+    "serve:dist": "python -m http.server --directory dist 8080"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "optionalDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+# .github/workflows/deploy.yml
+# Auto-deploy on push to main branch via GitHub Pages (with custom domain CNAME)
+# Alternative: connect this repo to Vercel/Netlify for one-click.
+
+name: Deploy static site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Prepare Pages artifact
+        run: |
+            # Copy build output into a clean dir at root for Pages
+            mkdir -p _site
+            cp -r dist/. _site/
+            # Ensure CNAME is in place
+            cp CNAME _site/CNAME 2>/dev/null || true
+            cp -r .nojekyll _site/.nojekyll 2>/dev/null || true
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

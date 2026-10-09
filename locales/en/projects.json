@@ -1,0 +1,96 @@
+{
+  "capsule": {
+    "eyebrow": "GI tract screening · no tube, no sedation",
+    "title": "Anhan AI magnetically guided capsule endoscopy",
+    "summary": "A capsule a touch bigger than a leading fish-oil tablet records the stomach and bowel as it moves naturally, then leaves the body on its own. No sedation, no tube.",
+    "features": {
+      "ai_led": {
+        "title": "AI-assisted reading",
+        "body": "Magnetic positioning and an imaging AI model flag suspicious frames for physician review."
+      },
+      "no_tube": {
+        "title": "No tube, no sedation",
+        "body": "You swallow the capsule with a sip of water. There is no traditional endoscope and no anesthesia."
+      },
+      "single_use": {
+        "title": "Single-use",
+        "body": "The capsule is a single-use medical device. It exits naturally and is not recovered or reused."
+      }
+    },
+    "who": {
+      "title": "Who it is for",
+      "body": "Adults with upper abdominal discomfort, chronic gastritis follow-up, a family history of gastric cancer, or anyone avoiding conventional endoscopy. Pregnant patients and people with implanted pacemakers should consult their physician first."
+    },
+    "preparation": {
+      "title": "How to prepare",
+      "bullets": [
+        "Eat only clear or semi-liquid food the day before and fast for 8 to 10 hours",
+        "Stop iron and bismuth-containing medicines 3 days ahead",
+        "People with diabetes should adjust medication with their physician in advance"
+      ]
+    },
+    "process": {
+      "title": "What happens during the procedure",
+      "steps": [
+        "Sign the consent form and put on the data recorder belt",
+        "Swallow the capsule with a small sip of water",
+        "Magnetic guidance captures images of the stomach and bowel",
+        "Physician reads the images with AI support, report in 3 to 5 business days",
+        "The capsule exits naturally; no recovery needed"
+      ]
+    },
+    "risk": {
+      "title": "Risks and cautions",
+      "body": "Capsule retention is rare but possible. People with known bowel obstruction or severe strictures should not have this test. Avoid strong magnetic fields on the day of the test."
+    },
+    "cta_primary": "Book capsule endoscopy",
+    "cta_secondary": "View cardiac MR angiography"
+  },
+  "cardiac": {
+    "eyebrow": "Coronary screening · no radiation, no contrast",
+    "title": "Cardiac MR angiography (MRCA)",
+    "summary": "A 3.0T MRI scanner images the coronary arteries without iodinated contrast and without ionizing radiation, suitable for repeat follow-up.",
+    "features": {
+      "no_radiation": {
+        "title": "No ionizing radiation",
+        "body": "Magnetic imaging replaces X-rays, so it can be used for routine follow-up."
+      },
+      "no_contrast": {
+        "title": "No contrast agent",
+        "body": "No iodinated or gadolinium contrast is injected, which suits people with allergies or reduced kidney function."
+      },
+      "breath_hold": {
+        "title": "14-second breath hold",
+        "body": "Each scan needs a 14-second breath hold. The full study takes 30 to 45 minutes."
+      }
+    },
+    "who": {
+      "title": "Who it is for",
+      "body": "Adults with chest tightness, chest pain, or a family history of coronary disease; people allergic to CT contrast who wish to reduce radiation exposure; anyone with an abnormal screening ECG needing further evaluation."
+    },
+    "preparation": {
+      "title": "How to prepare",
+      "bullets": [
+        "Skip caffeine on the day of the test",
+        "Practice a 14-second breath hold and follow the technician's rhythm",
+        "Pacemakers, implantable defibrillators, and aneurysm clips are contraindications; disclose implants in advance"
+      ]
+    },
+    "process": {
+      "title": "What happens during the procedure",
+      "steps": [
+        "Sign the consent form and remove metal accessories",
+        "Practice the breath-hold rhythm and connect the ECG gating leads",
+        "Multiple angle scans inside the bore",
+        "Physician reads and post-processes the images, report in 2 to 3 business days",
+        "Physician reviews the report with you in person or by video"
+      ]
+    },
+    "risk": {
+      "title": "Risks and cautions",
+      "body": "MRI itself produces no ionizing radiation, but implanted metal can be affected by the magnetic field. Disclose all prior surgeries and implants before the scan."
+    },
+    "cta_primary": "Book cardiac MR angiography",
+    "cta_secondary": "View capsule endoscopy"
+  }
+}

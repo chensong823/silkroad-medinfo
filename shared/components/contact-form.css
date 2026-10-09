@@ -1,0 +1,103 @@
+/* shared/components/contact-form.css
+   Form-specific styles (form.css is in components.css).
+   Add component-level adjustments here. */
+
+/* Honeypot field must be invisible to humans, accessible to bots */
+.form .form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Form error icons */
+.form-field .form-error::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23DC2626'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* Submit loading state */
+.form button[type="submit"][data-loading="true"] {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+.form button[type="submit"][data-loading="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: cf-spin 0.8s linear infinite;
+}
+@keyframes cf-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Success / error toast styling */
+.form-status.is-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--success);
+}
+.form-status.is-error {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--danger);
+}
+.form-status.is-success::before,
+.form-status.is-error::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.form-status.is-success::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2310B981' stroke-width='2'><circle cx='12' cy='12' r='10'/><path d='M9 12l2 2 4-4'/></svg>");
+}
+.form-status.is-error::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23DC2626' stroke-width='2'><circle cx='12' cy='12' r='10'/><path d='M12 8v4M12 16h.01'/></svg>");
+}
+
+/* Field invalid state */
+.form-field.is-invalid input,
+.form-field.is-invalid select,
+.form-field.is-invalid textarea {
+  border-color: var(--danger);
+  background-color: rgba(220, 38, 38, 0.04);
+}
+.form-field.is-invalid .form-error {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+/* Consent row when invalid */
+.form-consent-row.is-invalid label {
+  color: var(--danger);
+}
+.form-consent-row .form-error {
+  display: none;
+  width: 100%;
+  margin-top: 4px;
+  padding-left: 28px;
+}
+.form-consent-row.is-invalid .form-error {
+  display: block;
+}

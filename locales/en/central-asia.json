@@ -1,0 +1,34 @@
+{
+  "page_title": "Xinjiang and Central Asia",
+  "page_lead": "For patients from the five Central Asian countries and across Xinjiang, we provide care navigation in Chinese, Russian, and Uzbek.",
+  "cross_border": {
+    "title": "Cross-border care · From Almaty, Tashkent, Bishkek to Urumqi",
+    "lead": "Visas, medical escorts, lodging, translators, and follow-up after discharge. The Xinjiang flagship team arranges it in advance.",
+    "services": {
+      "visa": {
+        "title": "Visa and invitation letter",
+        "body": "We issue medical invitation letters and coordinate medical visa procedures for Kazakhstan, Uzbekistan, and Kyrgyzstan."
+      },
+      "translator": {
+        "title": "Three-language escort",
+        "body": "Chinese, Russian, and Uzbek translators accompany you through outpatient visits, tests, and surgical conversations."
+      },
+      "hotel": {
+        "title": "Lodging and transfers",
+        "body": "A curated list of partner lodgings near the hospital for accompanying family, plus scheduled airport and hospital transfers."
+      },
+      "followup": {
+        "title": "Follow-up after discharge",
+        "body": "Once you are back in Central Asia, you can keep seeing the same physician by video for condition updates and medication changes."
+      }
+    }
+  },
+  "uigur": {
+    "title": "Uyghur medicine clinic",
+    "lead": "Uyghur medicine is on China's national intangible cultural heritage list. It is well suited to chronic digestion, skin, and seasonal conditions."
+  },
+  "kazakh": {
+    "title": "Kazakh medicine clinic",
+    "lead": "Kazakh traditional medicine combines herbal formulas, mineral springs, and herbal baths, paired with modern medicine for sub-health conditioning."
+  }
+}

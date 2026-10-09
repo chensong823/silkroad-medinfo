@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="bg-warm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBF7F0"/>
+      <stop offset="100%" stop-color="#D4B585"/>
+    </linearGradient>
+    <linearGradient id="bg-cool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4F7FB"/>
+      <stop offset="100%" stop-color="#E8EDF2"/>
+    </linearGradient>
+    <linearGradient id="bg-navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A2540"/>
+      <stop offset="100%" stop-color="#061A2E"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(15,23,42,0.18)"/>
+    </radialGradient>
+    
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg-warm)"/>  <rect width="1920" height="1080" fill="url(#vignette)"/>  <g>
+    <ellipse cx="960" cy="640" rx="340" ry="60" fill="#E8EDF2" opacity="0.6"/>
+    <rect x="620" y="620" width="680" height="50" fill="#F4F7FB" rx="4" stroke="#334155" stroke-width="0.5" opacity="0.7"/>
+  </g>  <g>
+    <rect x="770.0" y="535.0" width="380" height="130" rx="65.0" ry="65.0"
+          fill="#E8EDF2" stroke="#334155" stroke-width="0.5"/>
+    <rect x="778.0" y="543.0" width="171.0" height="114" rx="57.0"
+          fill="#0B5FAE" opacity="0.85"/>
+    <circle cx="1130.0" cy="600" r="6" fill="#E63946"/>
+  </g>
+  <g opacity="0.7" stroke="#8B5A3C" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M 1480 280 Q 1560 200 1620 320"/>
+    <path d="M 1500 240 Q 1560 180 1640 240"/>
+    <path d="M 1520 200 Q 1580 140 1680 180"/>
+    <circle cx="1620" cy="320" r="3" fill="#8B5A3C"/>
+    <circle cx="1640" cy="240" r="3" fill="#8B5A3C"/>
+    <circle cx="1680" cy="180" r="3" fill="#8B5A3C"/>
+  </g>  <g opacity="0.55" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#334155">
+    <text x="48" y="1010" font-weight="600">Silk Road Medinfo · placeholder</text>
+    <text x="48" y="1040" font-size="18" fill="#334155" opacity="0.75">Capsule Endoscopy · variant C</text>
+  </g>
+</svg>
