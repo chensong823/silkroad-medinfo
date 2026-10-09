@@ -87,8 +87,8 @@ def check_html_parses(path: Path):
 
 def check_em_dash(path: Path):
     text = path.read_text(encoding="utf-8")
-    found = ANY_EM.findall(text)
-    return [(i, text[max(0, i-20):i+20]) for i, _ in enumerate(found, start=text.find("\n") + 1)]
+    found = list(ANY_EM.finditer(text))
+    return [(m.start(), text[max(0, m.start()-20):m.end()+20]) for m in found]
 
 
 def check_meta_lang(path: Path):

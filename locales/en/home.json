@@ -23,6 +23,35 @@
   "final_cta": {
     "title": "Share a few details. A care coordinator will reach you within one business day.",
     "body": "Consultations are complimentary. Procedure fees follow the clinic's published schedule.",
-    "button": "Book a consultation"
+    "button": "Book a consultation",
+    "tag": "Start a request"
+  },
+  "stat_countries": "Serving 5 Central Asian countries",
+  "stat_languages": "Chinese · Russian · Uzbek",
+  "stat_contact": "Care coordinator replies within 1 business day",
+  "section_capabilities": {
+    "title": "Three things we do for patients"
+  },
+  "cap_read": {
+    "title": "Understand first, then decide",
+    "body": "Plain-language explanations of each procedure, its workflow, and what to prepare, with cited sources and last-updated dates."
+  },
+  "cap_book": {
+    "title": "Fast booking",
+    "body": "Submit the form, get a reply within one business day, and confirm your timing with Chinese, Russian, or Uzbek escort support."
+  },
+  "cap_followup": {
+    "title": "Continuity after discharge",
+    "body": "Back in Central Asia, continue with the same physician by video, and we help with Chinese-Russian translation of any medical documents."
+  },
+  "pull_quote": {
+    "body": "We do not leave after the scan. We walk with patients from the clinic door, all the way home with their report, and on to their next follow-up.",
+    "cite": "— Care Coordinator · Cross-border Escort Team"
+  },
+  "section_science": {
+    "eyebrow": "How the test works",
+    "title": "Understand it first. Then decide.",
+    "lead": "The Patient Library explains how each test works, what happens during it, and what to prepare, so you can ask your physician the right questions.",
+    "cta": "Open the library"
   }
 }

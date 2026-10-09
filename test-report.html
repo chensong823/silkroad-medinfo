@@ -45,7 +45,7 @@
 </table>
 
 <h2>2. em-dash 禁用（v2 规范）</h2>
-<p>所有 24 个页面扫描 em-dash（—）、en-dash（–）、horizontal bar（―）。结果：0 命中。</p>
+<p>所有 24 个页面扫描 em-dash（ ）、en-dash（ ）、horizontal bar（ ）。结果：0 命中。</p>
 
 <h2>3. 链接完整性</h2>
 <p>每个页面的 <code>href</code> 与 <code>src</code> 经相对路径解析后必须指向现有文件。深度感知（root / en/ / en/projects/ 三种深度）的 <code>fix-paths.py</code> 修复脚本保证路径层级正确。</p>
@@ -75,7 +75,7 @@
 <ul>
   <li><code>generate-locale-mirrors.py</code> 镜像路径层级错误 → 已加深度感知</li>
   <li><code>fix-paths.py</code> 重复 <code>../../shared/</code> → 修正为正确的 <code>../shared/</code> 与 <code>shared/</code></li>
-  <li><code>fix-broken-paths.py</code> 残存 <code>.././</code> → 简化为 <code>./</code></li>
+  <li><code>fix-broken-paths.py</code> 残存 <code>./</code> → 简化为 <code>./</code></li>
   <li><code>sed -i</code> 双前缀 <code>silkroad-medinfo.comhttps</code> → 单前缀</li>
   <li><code>i18n</code> 数据键 <code>contact.form</code> → <code>contact.form_title</code></li>
 </ul>
